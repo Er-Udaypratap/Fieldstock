@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — Fieldstock</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="mark"></span>Fieldstock</a>
+    <nav class="main-nav">
+      <a href="index.html">Shop</a>
+      <a href="index.html#catalog">Categories</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+    <div class="nav-account">
+      <a href="cart.html" class="cart-link">
+        Cart <span class="cart-count" data-cart-count>0</span>
+      </a>
+      <a href="login.html" data-account-link>Login</a>
+    </div>
+  </div>
+</header>
+
+<div class="form-page">
+  <h1>Welcome back</h1>
+  <p>Log in to view your orders and check out faster.</p>
+
+  <form id="loginForm">
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+    </div>
+    <div class="form-error" id="loginError"></div>
+    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+  </form>
+
+  <p class="form-switch">Don't have an account? <a href="register.html">Register here</a></p>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
